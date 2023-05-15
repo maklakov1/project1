@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+}
+
+body {
+    background-image: url(img/2.jpg);
+    background-size: cover;
+    position: relative; 
+    background-attachment: fixed;
+}
+
+/* Шапка */
+
+.h1 {
+    width: 100vw;
+    height: 120px;
+    background-color:#131313;
+    color:white;
+}
+
+.h1 a {
+    font-size:40px;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 6%;
+    font-family: 'Roboto Slab', serif;
+    text-decoration:none;
+    color:white;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.h1 img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-top: 1.5%;
+    transition: 0.3s;
+}
+.hd {
+    display: flex;
+    justify-content: center;
+}
+
+/* Мейн */
+
+article {
+    height: 100%;
+    background-image: url(img/4.jpg);
+    margin: 0 5%;
+    color:white;
+    padding: 10px;
+}
+article h2 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+article p {
+    margin: 20px 10%;
+    color:white;
+    font-size: 22px;
+}
+
+article h3 {
+    margin: 20px 10%;
+    color:white;
+    font-size: 30px;
+}
+article ul{
+    margin: 20px 10%;
+    color:white;
+    font-size: 22px;
+}
+article img {
+    width: 40%;
+    margin: 0 30%;
+}
+.main{
+    width: 100%;
+}
+
+/* Подвал */
+
+footer {
+    height: 100px;
+    background-image: url(img/4.jpg);
+    color:white;    
+    margin: 0 5%;
+}
+footer p {
+    padding: 2%;
+    text-align: center;
+    font-size: 16px; 
+}
+
+/* Анимации */
+
+img:hover {
+    scale: 1.2;
+}
+
+header a:hover {
+    opacity: 0.6;
+}
+
+/* Адаптивная верстка */
+@media screen and (max-width:1200px){
+    article h2 {
+        font-size: 28px;
+    }
+    .h1{
+        height: 110px;
+    }
+    .h1 a {
+        font-size:33px;
+    }
+    .h1 img {
+        width: 60px;
+        height: 60px;
+    }
+    article p {
+        font-size: 19px;
+    }
+    article h3 {
+        font-size: 26px;
+    }
+    article ul{
+        font-size: 19px;
+    }
+    footer p {
+        font-size: 12px; 
+        padding-top: 4%;
+    }
+}
+@media screen and (max-width:992px){
+    article h2 {
+        font-size: 21px;
+    }
+    .h1{
+        height: 100px;
+    }
+    .h1 a {
+        font-size:26px;
+        margin-top: 4%;
+    }
+    .h1 img {
+        width: 50px;
+        height: 50px;
+        margin-top: 3.5%;
+    }
+    article p {
+        font-size: 17px;
+    }
+    article h3 {
+        font-size: 19px;
+    }
+    article ul{
+        font-size: 17px;
+    }
+    footer {
+        height: 90px;
+    }
+}
+@media screen and (max-width:768px){
+    article h2 {
+        font-size: 18px;
+    }
+    .h1{
+        height: 90px;
+    }
+    .h1 a {
+        font-size:20px;
+        margin-top: 5%;
+    }
+    .h1 img {
+        width: 45px;
+        height: 45px;
+        margin-top: 4%;
+    }
+    article p {
+        font-size: 15px;
+    }
+    article h3 {
+        font-size: 16px;
+    }
+    article ul{
+        font-size: 15px;
+    }
+    body {
+        background-image:none;
+    }
+    article {
+        margin:0;
+    }
+    footer {
+        margin: 0;
+        height: 80px;
+    }
+}
+@media screen and (max-width:576px){
+    article h2 {
+        font-size: 15px;
+    }
+    .h1{
+        height: 80px;
+    }
+    .h1 a {
+        font-size: 15px;
+        margin-top: 6%;
+    }
+    .h1 img {
+        width: 37px;
+        height: 37px;
+        margin-top: 5%;
+    }
+    article p {
+        font-size: 13px;
+    }
+    article h3 {
+        font-size: 13px;
+    }
+    article ul{
+        font-size: 13px;
+    }
+    body {
+        background-image:none;
+    }
+    article {
+        margin:0;
+    }
+    footer {
+        margin: 0;
+        height: 70px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:450px){
+    article h2 {
+        font-size: 12px;
+    }
+    .h1{
+        height: 60px;
+    }
+    .h1 a {
+        font-size:11px;
+        margin-top: 5%;
+    }
+    .h1 img {
+        width: 32px;
+        height: 32px;
+        margin-top: 4%;
+    }
+    article p {
+        font-size: 9px;
+    }
+    article h3 {
+        font-size: 10px;
+    }
+    article ul{
+        font-size: 9px;
+    }
+    body {
+        background-image:none;
+    }
+    article {
+        margin:0;
+    }
+    footer {
+        margin: 0;
+        height: 60px;
+    }
+    footer p{
+        font-size: 8px;
+    }
+}

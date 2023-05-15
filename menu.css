@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+}
+
+body {
+    background-image: url(img/2.jpg);
+    background-size: cover;
+    position: relative; 
+    background-attachment: fixed;
+}
+
+/* Шапка */
+
+.h1 {
+    width: 100vw;
+    height: 120px;
+    background-color:#131313;
+    color:white;
+}
+
+.h1 a {
+    font-size:40px;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 6%;
+    font-family: 'Roboto Slab', serif;
+    text-decoration:none;
+    color:white;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.h1 img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-top: 1.5%;
+    transition: 0.3s;
+}
+.hd {
+    display: flex;
+    justify-content: center;
+}
+
+/* Меню */
+
+.menu {
+    height: 500px;
+    background-image: url(img/4.jpg);
+    margin: 0 5%;
+    color:white;
+    padding: 10px;
+}
+.menu h2 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.menu a {
+    font-size: 35px;
+    text-decoration:none;
+    color:white;
+    opacity: 1;
+    transition: 0.3s;
+}
+.str{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-content:space-around;
+    font-size: 40px;
+}
+.str a {
+    margin: 30px;
+}
+
+/* Введение*/
+
+.vedenie {
+    height: 500px;
+    background-image: url(img/4.jpg);
+    margin: 0 5%;
+    font-size: 27px;
+}
+.vedenie p{
+    margin: 0px 13%;
+    color:white;
+    font-size:25px;
+    padding: 50px 0;
+}
+.b {
+    font-size: 35px;
+}
+
+/* Подвал */
+
+footer {
+    height: 100px;
+    background-image: url(img/4.jpg);
+    color:white;    
+    margin: 0 5%;
+}
+footer p {
+    padding: 2%;
+    text-align: center;
+}
+
+/* Анимации */
+
+.menu a:hover {
+    opacity: 0.6;
+}
+
+img:hover {
+    scale: 1.2;
+}
+
+header a:hover {
+    opacity: 0.6;
+}
+
+/* Адаптивная верстка */
+@media screen and (max-width:1300px){
+    .h1{
+        height: 110px;
+    }
+    .h1 a {
+        font-size:33px;
+    }
+    .h1 img {
+        width: 60px;
+        height: 60px;
+    }
+    .vedenie p {
+        font-size: 22px;    
+    }
+    .menu h2 {
+        font-size: 40px;
+    }
+    .menu a {
+        font-size: 30px;
+    }
+    .vedenie p {
+        font-size: 22px;    
+    }
+}
+@media screen and (max-width:992px){
+    .h1{
+        height: 100px;
+    }
+    .h1 a {
+        font-size:26px;
+        margin-top: 4%;
+    }
+    .h1 img {
+        width: 50px;
+        height: 50px;
+        margin-top: 3.5%;
+    }
+    .vedenie p {
+        font-size: 19px;    
+    }
+    .menu h2 {
+        font-size: 35px;
+    }
+    .menu a {
+        font-size: 25px;
+    }
+    footer {
+        height: 90px;
+    }
+    body {
+        background-image:none;
+    }
+    .menu, .vedenie {
+        margin:0;
+    }
+    footer {
+        margin: 0;
+        height: 80px;
+    }
+}
