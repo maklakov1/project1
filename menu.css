@@ -48,6 +48,23 @@ body {
     justify-content: center;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1.5%;
+}
+
+.nav img {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+}
+
+.nav button:hover {
+    opacity: .7;
+}
+
 /* Меню */
 
 .menu {
@@ -88,17 +105,14 @@ body {
     margin: 0 5%;
     font-size: 27px;
 }
+
 .vedenie p{
     margin: 0px 13%;
     color:white;
     font-size:25px;
     padding-top: 90px;
-    word-spacing: normal;
-    
 }
-.b {
-    font-size: 35px;
-}
+
 .img{
     display: flex;
     flex-wrap: wrap; 
@@ -119,7 +133,7 @@ body {
 /* Подвал */
 
 footer {
-    height: 100px;
+    height: 160px;
     background-image: url(img/4.jpg);
     color:white;    
     margin: 0 5%;
@@ -127,6 +141,12 @@ footer {
 footer p {
     padding: 2%;
     text-align: center;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Анимации */
@@ -144,7 +164,7 @@ header a:hover {
 }
 
 /* Адаптивная верстка */
-@media screen and (max-width:1300px){
+@media screen and (max-width:1350px){
     .h1{
         height: 110px;
     }
@@ -167,8 +187,12 @@ header a:hover {
     .vedenie p {
         font-size: 22px;    
     }
+    .nav a {
+        font-size: 17px;
+        margin-top: 4px;
+    }
 }
-@media screen and (max-width:992px){
+@media screen and (max-width:1130px){
     .h1{
         height: 100px;
     }
@@ -190,9 +214,6 @@ header a:hover {
     .menu a {
         font-size: 25px;
     }
-    footer {
-        height: 90px;
-    }
     body {
         background-image:none;
     }
@@ -201,7 +222,14 @@ header a:hover {
     }
     footer {
         margin: 0;
-        height: 80px;
+        height: 140px;
     }
-
+    footer img {
+        width: 50px;
+        height: 50px;
+    }
+    .nav a {
+        font-size: 13px;
+        margin-top: 7px;
+    }
 }
