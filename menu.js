@@ -10,3 +10,7 @@ links.forEach(function (element) {
         })
     })
 })
+
+$(document).ready(function () {
+    $('.img').bxSlider();
+});
