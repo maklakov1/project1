@@ -124,10 +124,21 @@ body {
     align-content: stretch;
     padding-bottom: 5%;
 }
+
 .img img{
-    width: 40%;
-    margin-left: 7%;
-    margin-top: 1%;
+    width: 50%;
+    height: 100%;
+}
+
+.img img {
+    transform: translateX(37%);
+}
+
+.bx-wrapper {
+    width: 90%;
+    background-image:url(img/4.jpg) ;
+    margin: auto;
+    height: 100%;
 }
 
 /* Подвал */
@@ -155,7 +166,7 @@ footer div{
     opacity: 0.6;
 }
 
-img:hover {
+.hover:hover {
     scale: 1.2;
 }
 
@@ -190,6 +201,13 @@ header a:hover {
     .nav a {
         font-size: 17px;
         margin-top: 4px;
+    }
+    .img img {
+        transform: translateX(25%);
+    }
+    .img img{
+        width: 60%;
+        height: 100%;
     }
 }
 @media screen and (max-width:1130px){
@@ -231,5 +249,15 @@ header a:hover {
     .nav a {
         font-size: 13px;
         margin-top: 7px;
+    }
+    .bx-wrapper {
+        width: 100%;
+    }
+    .img img {
+        transform: translateX(35%);
+    }
+    .img img{
+        width: 60%;
+        height: 100%;
     }
 }
